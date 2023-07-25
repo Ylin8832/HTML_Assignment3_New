@@ -1,0 +1,154 @@
+
+*{
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 2px solid black;
+    font: normal normal 12px/1.5 arial sans-serif;
+
+}
+header, nav, footer{
+    height: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    height: 10vh;
+    padding: 5px;
+}
+
+header{
+    background-color: orange;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: aqua;
+}
+main{
+    background-color: bisque;
+    float: left;
+    width: 70%;
+    margin: 5px;
+    border: 2px solid black;
+}
+aside{
+    background-color: blueviolet;
+    color: white;
+    float: right;
+    width: 25%;
+    height: 70vh;
+    margin: 5px;
+    border: 2px solid black;
+}
+footer{
+    background-color:lightyellow;
+    color: black;
+    clear: both;
+    font-size: medium;
+}
+nav a{
+    text-decoration-line: none;
+    background-color:white;
+    color:black;
+    border: 1px solid black;
+    padding: 2px;
+    width: 20px;
+
+}
+nav a:hover{
+    background-color:blue;
+}
+
+label{
+    color: brown;
+    font-weight: bold;
+}
+
+p{
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: medium;
+}
+input, textarea{
+    display: block;
+}
+
+.Button{
+    display: block;
+    margin: 5px;
+}
+input[type=radio], input[type=checkbox], input[type=radio]{
+ display: inline;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: lightblue;
+    }
+    main{
+        width: 98%;
+        float:none;
+        margin: 5px;
+        padding: 5px;
+        
+    }
+    aside{
+        width:98%;
+        float:none;
+        margin: 5px;
+        padding: 5px;
+    }
+    header{
+        background-color: red;
+    }
+  }
+
+  ul{
+    list-style: none;
+    line-height: 30px;
+  }
+  
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: pink;
+    }
+    main{
+        width: 98%;
+        float:none;
+        margin: 5px;
+        padding: 5px;
+        
+    }
+    aside{
+        width:98%;
+        float:none;
+        margin: 5px;
+        padding: 5px;
+    }
+    header{
+        background-color: burlywood;
+    }
+  }
+
+  .center{
+    width: 80%;
+    height: 50vh;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  h1, h2{
+    text-align: center;
+  }
+
+  fieldset{
+    margin: 20px;
+  }

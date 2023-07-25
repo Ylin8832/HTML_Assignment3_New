@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="description" content="This is site is about css and html." />
+    <meta name="keywords" content="HTML, CSS" />
+    <title>My assignment Webpage</title>
+  </head>
+  <body>
+    <header>My assignment Webpage</header>
+    <nav>
+      <a href="index.html">HOME</a>
+    </nav>
+    <main>
+      <h2>Contact Us</h2>
+      <p>
+        Contact us at 1-234-5678 <br />
+        Email: Contact@gmail.com
+      </p>
+
+      <form
+        name="contact_us"
+        id="contactus"
+        method="post"
+        action="Contact.php"
+        autocomplete="on"
+      >
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Your first Name"
+            required
+            autofocus
+          />
+
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Your Family Name"
+          />
+          <label for="phone">Phone No.:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            title="Use this format:555-555-5555"
+            placeholder="555-555-5555"
+          />
+          <label for="email">EMAIL</label>
+          <input
+            type="email"
+            id="email"
+            maxlength="40"
+            placeholder="email@example.com"
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="123ABC@#$%"
+          />
+          <input type="hidden" name="location" id="Canada" />
+          <label for="document">Uploade Document</label>
+          <input type="file" id="document" name="document" />
+          <br />
+          <label for="employmentStatus">Tell us your employment status</label>
+          <select id="employmentStatus">
+            <option>--Select Option--</option>
+            <option>Student</option>
+            <option>Employed Full-time</option>
+            <option>Employed Part-time</option>
+            <option>Retired</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <label for="friend">Friend</label>
+          <input type="radio" name="friend" id="friend" value="friend" />
+          <label for="socialmedia">Socialmedia</label>
+          <input
+            type="radio"
+            name="source"
+            id="socialmedia"
+            value="socialmedia"
+          />
+          <label for="searchEngine">Search Engine</label>
+          <input
+            type="radio"
+            name="searchEngine"
+            id="searchEngine"
+            value="searchEngine"
+          />
+
+          <label for="other">Other</label>
+          <input type="radio" name="other" id="other" value="other" />
+        </fieldset>
+        <fieldset>
+          <legend>Tell Us what you think!</legend>
+          <label for="comments">COMMENTS</label>
+          <textarea
+            id="com"
+            cols="100"
+            rows="5"
+            placeholder="--Write your message here--"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Submit</legend>
+
+          <input type="checkbox" value="iamnotarobot" />
+          <label for="iamnotarobot">I am not a robot</label>
+          <input
+            class="Button"
+            type="submit"
+            value="Submit"
+            id="submit"
+            class="button"
+          />
+          <input
+            class="Button"
+            type="reset"
+            value="Clear"
+            id="submit"
+            class="button"
+          />
+        </fieldset>
+      </form>
+    </main>
+    <aside>
+      <h2>My List</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </aside>
+    <footer>&copy;Yunfeng Lin 2023</footer>
+  </body>
+</html>
